@@ -40,15 +40,15 @@ jobs:
           path: test-results.xml
 
     
-    Code-Coverage:
-      name: code coverage
+    code-coverage:
+      # name: code coverage
       runs-on: ubuntu-latest
 
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
       
-      - name: Setup NodeJS Version
+      - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
           node-version: 18
